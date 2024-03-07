@@ -35,7 +35,7 @@ main.products {
   text-align: center;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -52,4 +52,22 @@ footer {
   grid-area: foot;
   padding: 10px;
   border: 1px solid red;
+}
+
+@media (min-width: 576px) {
+  body {
+    grid-template-areas:
+      "header header header"
+      "filters main main"
+      "foot foot foot";
+  }
+  main.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .card {
+    flex-direction: column;
+  }
 }
