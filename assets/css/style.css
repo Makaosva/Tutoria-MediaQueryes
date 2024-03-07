@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: whitesmoke;
+
   display: grid;
   grid-template-areas:
     "header"
@@ -12,16 +13,43 @@ body {
 
 header {
   grid-area: header;
+  padding: 10px;
+  border: 1px solid red;
 }
 
 aside.filters {
   grid-area: filters;
+  padding: 10px;
+  border: 1px solid red;
 }
 
 main.products {
   grid-area: main;
+  border: 1px solid red;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 10px;
 }
 
 footer {
   grid-area: foot;
+  padding: 10px;
+  border: 1px solid red;
 }
