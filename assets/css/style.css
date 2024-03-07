@@ -1,11 +1,27 @@
 body {
   background-color: black;
+  color: whitesmoke;
   display: grid;
   grid-template-areas:
     "header"
     "filters"
     "main"
     "foot";
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
+header {
+  grid-area: header;
+}
+
+aside.filters {
+  grid-area: filters;
+}
+
+main.products {
+  grid-area: main;
+}
+
+footer {
+  grid-area: foot;
+}
